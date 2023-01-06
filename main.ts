@@ -2,5 +2,8 @@ let Count = 0
 basic.forever(function () {
     basic.showNumber(Count)
     Count += 1
-    basic.pause(1000)
+    if (Count >= 60) {
+        Count = 0
+    }
+    basic.pause(100)
 })
